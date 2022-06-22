@@ -1,0 +1,17 @@
+﻿@page
+@using System.Web
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    
+    <h5>
+        Image text <br />
+    </h5>
+    <div>
+       @Html.Raw(HttpUtility.HtmlDecode( @Model.Text))
+    </div>
+
+</div>
